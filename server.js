@@ -32,7 +32,7 @@ if ('development' == app.get('env')) {
 app.use('/vehicle', vehicle.handle);
 
 // default route
-app.use('/', function(req, res) {res.end('CPC Application')});
+app.use('/', function(req, res) {res.end('CPC Application - Alpha 0.0.1')});
 
 // start listening
 http.createServer(app).listen(app.get('port'), function(){
