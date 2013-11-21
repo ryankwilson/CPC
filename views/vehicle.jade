@@ -1,0 +1,11 @@
+html
+    h1
+        |Vehicle List
+    div
+        ul
+            each vehicle in Vehicles
+                li
+                    =vehicle.name
+    div
+        a(href='/vehicle/add')
+            |Add Vehicle
